@@ -5,7 +5,7 @@
                      | defence : int        |
                      | health : int         |
                      | strength : int       |
-		     +----------------------+
+		     		 +----------------------+
                      +----------------------+
                      | takeDamage()         |
                      +-----------^----------+
@@ -46,3 +46,4 @@
                     | applyEffect() |      | applyEffect() |    | applyEffect()|
                     | removeEffect()|      | removeEffect()|    | removeEffect()|
                     +----------------+     +---------------+    +-------------+
+

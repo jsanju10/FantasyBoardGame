@@ -1,3 +1,5 @@
+#include "Utility.h"
+#include "Constants.h"
 #include <iostream>
 #include <string>
 #include <cctype>
@@ -6,6 +8,7 @@
 #include "Utility.h"
 #include "Constants.h"
 
+<<<<<<< HEAD
 static void printWelcome()
 {
     std::cout << "======================================\n";
@@ -102,5 +105,28 @@ int main()
     }
 
     std::cout << "\nGame over. You collected " << player.getGold() << " gold.\n";
+=======
+int main() {
+    int commandCount = 0;
+
+    // Check day/night
+    if (Utility::isDayTime(commandCount)) {
+        std::cout << "It's daytime!" << std::endl;
+    } else {
+        std::cout << "It's nighttime!" << std::endl;
+    }
+
+    // Example: Random placement
+    int randomSquare = Utility::randInt(0, 9);
+    std::cout << "Random square: " << randomSquare << std::endl;
+
+    // Example: Attack chance
+    if (Utility::checkProbability(Constants::HUMAN.attackChance)) {
+        std::cout << "Attack successful!" << std::endl;
+    } else {
+        std::cout << "Attack missed!" << std::endl;
+    }
+
+>>>>>>> ac8ef0dba7af62ea9c1214bce3c5fd73d1efd64c
     return 0;
 }

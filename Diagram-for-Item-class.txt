@@ -1,0 +1,49 @@
+                     +----------------------+
+                     |     Character        |
+                     +----------------------+
+                     | attack : int         |
+                     | defence : int        |
+                     | health : int         |
+                     | strength : int       |
+		     		 +----------------------+
+                     +----------------------+
+                     | takeDamage()         |
+                     +-----------^----------+
+                                 |
+                                 |
+                     +-----------+----------+
+                     |        Player        |
+                     +----------------------+
+                     | inventory : vector   |
+                     |             <Item*>  |
+                     +----------------------+
+                     | pickItem()           |
+                     | dropItem()           |
+                     | showInventory()       |
+                     +-----------^----------+
+                                 |
+                                 |
+                         +-------+-------+
+                         |     Item      |  <<abstract>>
+                         +----------------+ 
+                         | name : string |
+                         | weight : int  |
+                         | type : enum   |
+                         +----------------+
+                         | applyEffect()  |  (pure virtual)
+                         | removeEffect() |
+                         +-------^--------+
+                                 |
+        ---------------------------------------------------------
+        |                     |                     |           |
+        |                     |                     |           |
+ +-------------+    +----------------+     +---------------+    +-------------+
+ |   Weapon    |    |    Armour      |     |    Shield     |    |    Ring     |
+ +-------------+    +----------------+     +---------------+    +-------------+
+ | attackBoost |    | defenceBoost   |     | defenceBoost  |    | healthBoost |
+ +-------------+    | attackPenalty  |     | attackPenalty |    | strengthBoost|
+                    +----------------+     +---------------+    +-------------+
+                    | applyEffect() |      | applyEffect() |    | applyEffect()|
+                    | removeEffect()|      | removeEffect()|    | removeEffect()|
+                    +----------------+     +---------------+    +-------------+
+

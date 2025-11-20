@@ -1,6 +1,10 @@
+// Utility.h
+// Helper functions for random numbers, probability checks, and time management.
+
 #ifndef UTILITY_H
 #define UTILITY_H
 
+<<<<<<< HEAD
 /**
  * Utility functions: RNG, probability, and day/night toggling.
  *
@@ -23,3 +27,14 @@ private:
 };
 
 #endif // UTILITY_H
+=======
+class Utility {
+public:
+    static int randInt(int min, int max);          // Random integer
+    static double randReal(double min, double max); // Random double
+    static bool checkProbability(double chance);    // True if event occurs
+    static bool isDayTime(int commandCount);        // True if day, false if night
+};
+
+#endif
+>>>>>>> ac8ef0dba7af62ea9c1214bce3c5fd73d1efd64c

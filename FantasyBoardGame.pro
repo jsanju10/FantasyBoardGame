@@ -10,6 +10,7 @@ SOURCES += \
         Character.cpp \
         Enemy.cpp \
         Item.cpp \
+        ItemFactory.cpp \
         Player.cpp \
         Ring.cpp \
         Shield.cpp \
@@ -25,6 +26,7 @@ HEADERS += \
     Constants.h \
     Enemy.h \
     Item.h \
+    ItemFactory.h \
     Player.h \
     Ring.h \
     Shield.h \
